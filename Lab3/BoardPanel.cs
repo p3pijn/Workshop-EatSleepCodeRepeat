@@ -15,7 +15,6 @@ namespace eu.sig.training.ch05.boardpanel.v3
         /// <param name="r">The position and dimension for rendering the square.</param>
         private void Render(Square square, Graphics g, Rectangle r)
         {
-            Point position = r.Position;
             square.Sprite.Draw(g, r);
             foreach (Unit unit in square.Occupants)
             {
