@@ -1,4 +1,9 @@
 # Workshop Eat Sleep Code Repeat
+
+[![BCH compliancy](http://bettercodehub.com/edge/badge/p3pijn/Workshop-EatSleepCodeRepeat)](https://bettercodehub.com)
+[![Build status](https://ci.appveyor.com/api/projects/status/8rawyi82n75r1tvn?svg=true)](https://ci.appveyor.com/project/p3pijn/workshop-eatsleepcoderepeat)
+
+
 * Sign in to GitHub (create an account if neccesary)
 * Fork this repository to your own account.
 * Clone the project on your development machine (git clone https://github.com/YourAccountNameHere/Workshop-EatSleepCodeRepeat.git)
