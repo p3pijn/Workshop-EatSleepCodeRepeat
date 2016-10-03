@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using Rectangle = eu.sig.training.ch05.boardpanel.v2.Rectangle;
 
 namespace eu.sig.training.ch05.boardpanel.v3
@@ -16,10 +17,7 @@ namespace eu.sig.training.ch05.boardpanel.v3
         private void Render(Square square, Graphics g, Rectangle r)
         {
             square.Sprite.Draw(g, r);
-            foreach (Unit unit in square.Occupants)
-            {
-                unit.Sprite.Draw(g, r);
-            }
+            square.Occupants.ForEach(o => o.Sprite.Draw(g, r));
         }
 
         private class Sprite
@@ -38,7 +36,7 @@ namespace eu.sig.training.ch05.boardpanel.v3
         private class Square : Unit
         {
 
-            public IList<Unit> Occupants { get; set; }
+            public List<Unit> Occupants { get; set; }
 
         }
     }
